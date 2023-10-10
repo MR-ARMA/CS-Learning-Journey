@@ -10,7 +10,6 @@ The repository contains a wide range of topics from basic to advanced concepts i
 - **Data Structures**: Detailed explanations and code implementations of various data structures.
 - **Operating Systems**: Concepts and principles of operating systems.
 - **Computer Networks**: Basics of networking and advanced networking topics.
-- **Machine Learning**: An introduction to machine learning algorithms and concepts.
 
 ## How to Use this Repository 🚀
 

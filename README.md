@@ -32,4 +32,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for more 
 
 ## Connect with Me 🌐
 
-If you like this project, follow me on GitHub for more. You can also connect with me on [LinkedIn](linkedin.com/in/alireza-mahdizadeh-275215292).
+If you like this project, follow me on GitHub for more. You can also connect with me on [LinkedIn](www.linkedin.com/in/alireza-mahdizadeh-275215292).

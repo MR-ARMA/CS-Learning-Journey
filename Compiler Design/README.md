@@ -12,6 +12,7 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 
 8. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
+9. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
 
 ## 📚 Course Topics
 

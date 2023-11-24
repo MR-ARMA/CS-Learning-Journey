@@ -1,8 +1,8 @@
-Sure, here's a professional, attractive, and impressive `README.md` file for your compiler design course pamphlets:
 
----
 
 # 🎓 Compiler Design Course Pamphlets 📚
+
+# <center> <div style="width: 370px;"> ![Sorting](Handout/pictures/compiler.jpg)
 
 Welcome to the repository for the Compiler Design Course Pamphlets! 🎉
 

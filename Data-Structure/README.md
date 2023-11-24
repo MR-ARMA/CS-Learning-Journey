@@ -3,7 +3,7 @@
 Hello there! This repository is a collection of my Jupyter notebooks, where I've documented my learning journey about data structures. I'm passionate about data structures and algorithms, and I believe that the best way to understand these concepts is to implement them and share my learnings. 
 
 
-# <center> <div style="width: 700px;"> ![Linear Data Structure](pictures/data_structure_readme.jpg)
+# <center> <div> ![Linear Data Structure](Handout/pictures/data_structure_readme.jpg)
 
 
 ## What's Inside? 📚

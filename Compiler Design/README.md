@@ -2,7 +2,7 @@
 
 # 🎓 Compiler Design Course Pamphlets 📚
 
-# <center> <div style="width: 300px;"> ![Sorting](Handout/pictures/compiler.jpg)
+# <center> <div style="width: 300px;"> ![compiler](Handout/pictures/compiler.jpg)
 
 Welcome to the repository for the Compiler Design Course Pamphlets! 🎉
 

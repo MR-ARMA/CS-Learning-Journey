@@ -1,5 +1,7 @@
 # Welcome to my Computer Science Learning Repository! 👋
 
+![CS](Data-Structure/Handout/pictures/CS.png)
+
 This repository is my personal collection of the concepts and materials I learn from Computer Science. I've put these materials together in the form of Jupyter Notebook files so that those who want to read and learn can do so at their own pace.
 
 ## Contents 📚

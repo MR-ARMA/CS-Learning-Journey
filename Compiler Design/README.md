@@ -11,7 +11,9 @@ This repository contains a collection of pamphlets that I've created to help oth
 ## 📖 Table of Contents
 
 00. [Introduction](./Handout/00_Introduction.ipynb)
+
 08. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
+
 09. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
 
 ## 📚 Course Topics

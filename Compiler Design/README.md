@@ -18,9 +18,16 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 03. [Regular Expresion and Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.ipynb)
 
-08. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
+04. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
 
-09. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
+05. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
+
+06. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/06_Ambiguity-Problems-and-Eliminating-the-Ambiguity.ipynb)
+
+07. [Top Down](./Handout/07_Top-down.ipynb)
+
+08. [Bottom Down](./Handout/08_Bottom-down.ipynb)
+
 
 ## 📚 Course Topics
 

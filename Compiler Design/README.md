@@ -12,6 +12,10 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 00. [Introduction](./Handout/00_Introduction.ipynb)
 
+01. [Compiler Basic](./Handout/01_Compiler-Basic.ipynb)
+
+02. [Bootstrapping](./Handout/02_Bootstrapping.ipynb)
+
 08. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
 
 09. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)

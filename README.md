@@ -1,4 +1,4 @@
-# Welcome to my Computer Science Learning Repository! 👋
+# Welcome to my Computer Science Learning 👋
 
 ![CS](Data-Structure/Handout/pictures/CS.png)
 

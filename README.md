@@ -1,4 +1,4 @@
-# Welcome to my Computer Science Learning 👋
+# Welcome to my Computer Science Journey 👋
 
 ![CS](Data-Structure/Handout/pictures/CS.png)
 

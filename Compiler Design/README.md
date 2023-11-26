@@ -16,6 +16,8 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 02. [Bootstrapping](./Handout/02_Bootstrapping.ipynb)
 
+03. [Regular Expresion and Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.ipynb)
+
 08. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
 
 09. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)

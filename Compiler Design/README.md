@@ -20,15 +20,15 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 04. [Manual Construction of Lexers[(./Handout/04_1_Manual_Construction_of_Lexers.ipynb)
 
-04. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
+05. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
 
-05. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
+06. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
 
-06. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/06_Ambiguity-Problems-and-Eliminating-the-Ambiguity.ipynb)
+07. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/06_Ambiguity-Problems-and-Eliminating-the-Ambiguity.ipynb)
 
-07. [Top Down](./Handout/07_Top-down.ipynb)
+08. [Top Down](./Handout/07_Top-down.ipynb)
 
-08. [Bottom Down](./Handout/08_Bottom-down.ipynb)
+09. [Bottom Down](./Handout/08_Bottom-down.ipynb)
 
 
 ## 📚 Course Topics

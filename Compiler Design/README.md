@@ -18,6 +18,8 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 03. [Regular Expresion and Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.ipynb)
 
+04. [Manual Construction of Lexers[(./Handout/04_1_Manual_Construction_of_Lexers.ipynb)
+
 04. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
 
 05. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)

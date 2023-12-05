@@ -10,25 +10,27 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 ## 📖 Table of Contents
 
-00. [Introduction](./Handout/00_Introduction.ipynb)
+00. [Introduction](./Handout/00_Introduction.md)
 
-01. [Compiler Basic](./Handout/01_Compiler-Basic.ipynb)
+01. [Compiler Basic](./Handout/01_Compiler-Basic.md)
 
-02. [Bootstrapping](./Handout/02_Bootstrapping.ipynb)
+02. [Bootstrapping](./Handout/02_Bootstrapping.md)
 
-03. [Regular Expresion and Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.ipynb)
+03. [Regular Expresion and Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.md)
 
-04. [Manual Construction of Lexers](./Handout/04_1_Manual_Construction_of_Lexers.ipynb)
+04. [Manual Construction of Lexers](./Handout/04_1_Manual_Construction_of_Lexers.md)
 
-05. [Syntax Analysis](./Handout/08_Syntax-Analysis.ipynb)
+05. [05 Automatic construction of Lexers](./Handout/05_Automatic_construction_of_Lexers.md)
 
-06. [Types of Grammar](./Handout/09_Types-of-Grammar.ipynb)
+06. [Syntax Analysis](./Handout/08_Syntax-Analysis.md)
 
-07. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/06_Ambiguity-Problems-and-Eliminating-the-Ambiguity.ipynb)
+07. [Types of Grammar](./Handout/09_Types-of-Grammar.md)
 
-08. [Top Down](./Handout/07_Top-down.ipynb)
+08. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/06_Ambiguity-Problems-and-Eliminating-the-Ambiguity.md)
 
-09. [Bottom Down](./Handout/08_Bottom-down.ipynb)
+09. [Top Down](./Handout/07_Top-down.md)
+
+10. [Bottom Down](./Handout/08_Bottom-down.md)
 
 
 ## 📚 Course Topics

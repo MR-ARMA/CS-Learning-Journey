@@ -22,15 +22,15 @@ This repository contains a collection of pamphlets that I've created to help oth
 
 05. [05 Automatic construction of Lexers](./Handout/05_Automatic_construction_of_Lexers.md)
 
-06. [Syntax Analysis](./Handout/08_Syntax-Analysis.md)
+06. [Syntax Analysis](./Handout/06_Syntax-Analysis.md)
 
-07. [Types of Grammar](./Handout/09_Types-of-Grammar.md)
+07. [Types of Grammar](./Handout/07_Types-of-Grammar.md)
 
-08. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/06_Ambiguity-Problems-and-Eliminating-the-Ambiguity.md)
+08. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/08_Ambiguity-Problems-and-Eliminating-the-Ambiguity.md)
 
-09. [Top Down](./Handout/07_Top-down.md)
+09. [Top Down](./Handout/09_Top-down.md)
 
-10. [Bottom Down](./Handout/08_Bottom-down.md)
+10. [Bottom Down](./Handout/10_Bottom-down.md)
 
 
 ## 📚 Course Topics

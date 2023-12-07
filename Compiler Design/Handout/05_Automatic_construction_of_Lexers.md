@@ -26,10 +26,12 @@
 
 #### The Lex/Flex Tool
 
-- **Lex/Flex** is a powerful tool for generating lexical analyzers automatically.
-- Lex programs describe the lexical analyzer to be generated.
+Flex, also known as Fast Lexical Analyzer Generator, is a tool used for generating lexical analyzers, also known as "scanners" or "lexers". It was written in C around 1987 by Vern Paxson and is often used in conjunction with other tools like Berkeley Yacc parser generator or GNU Bison parser generator.
 
-**Structure of Lex Programs:**
+## Structure of Lex Programs
+
+The structure of a lex program is as follows:
+
 ```python
 {% manifest constants %}
 declarations
@@ -38,9 +40,59 @@ translation rules
 %%
 auxiliary functions
 ```
-**Translation Rules:**
-- Each rule has the form: `Pattern { Action }`.
-- Patterns are regular expressions, and actions are code fragments, typically in C.
+
+- **Manifest constants**: These are enclosed in `{}` brackets and can include definitions for variables, regular definitions, and manifest constants.
+
+- **Declarations**: These are the variable declarations that are used in the program.
+
+- **Translation rules**: Each rule has the form: `Pattern { Action }`. Patterns are regular expressions, and actions are code fragments, typically in C.
+
+- **Auxiliary functions**: These are additional functions that can be compiled separately and loaded with the lexical analyzer.
+
+## Lexical Analysis
+
+Lexical analysis, or lexing, is the process of converting a sequence of characters into a sequence of tokens. The lexical analyzer takes in a stream of input characters and returns a stream of tokens.
+
+## Running a Lex Program
+
+To run a lex program, you need to follow these steps:
+
+1. Write an input file that describes the lexical analyzer to be generated. This file should be named `lex.l` and written in the lex language. The lex compiler transforms `lex.l` into a C program, in a file that is always named `lex.yy.c`.
+
+2. Compile the `lex.yy.c` file into an executable file. This can be done using the C compiler.
+
+3. Run the executable file. The output file will take a stream of input characters and produce a stream of tokens.
+
+Here is an example of how to run a lex program:
+
+```bash
+flex filename.l # or flex filename.lex depending on the extension file is saved with
+gcc lex.yy.c
+./a.out
+```
+
+Then provide the input to the program if it is required. Press `Ctrl+D` or use some rule to stop taking inputs from the user.
+
+## Advantages and Disadvantages of Flex
+
+Flex has several advantages:
+
+- **Efficiency**: Flex-generated lexical analyzers are very fast and efficient, which can improve the overall performance of the programming language.
+- **Portability**: Flex is available on many different platforms, making it easy to use on a wide range of systems.
+- **Flexibility**: Flex is very flexible and can be customized to support many different types of programming languages and input formats.
+- **Easy to Use**: Flex is relatively easy to learn and use, especially for programmers with experience in regular expressions.
+
+However, there are also some disadvantages:
+
+- **Steep Learning Curve**: While Flex is relatively easy to use, it can have a steep learning curve for programmers who are not familiar with regular expressions.
+- **Limited Error Detection**: Flex-generated lexical analyzers can only detect certain types of errors, such as syntax errors and misspelled keywords.
+- **Limited Support for Unicode**: Flex has limited support for Unicode, which can make it difficult to work with non-ASCII characters.
+- **Code Maintenance**: Flex-generated code can be difficult to maintain over time, especially as the programming language evolves and changes. This can make it challenging to keep the lexical analyzer up to date with the latest version of the language.
+
+# <center><img src="pictures/Lex.JPG" width="800"/>
+
+
+
 
 #### Lex Architecture
 

@@ -12,7 +12,7 @@ The study of algorithms aims to discover efficient methods for problem-solving. 
 ### Correctness:
 Any computer program you write will have finite size, while an input it acts on may be arbitrarily large. Thus, every algorithm we discuss in this class will need to repeat commands in the algorithm via loops or recursion, and we will be able to prove correctness of the algorithm via induction.
 
-***prove correctness of often Algorithms:
+***prove correctness of often Algorithms:***
 - for first input check that is correct
 - assume tha for `k` element is correct
 - prove (argue) for `k + 1` element thats correct
@@ -36,6 +36,8 @@ When one function both serves as an upper asymptotic bound and a lower asymptoti
 
 To simplify the characterization of the asymptotic growth (i.e., asymptotic complexity) of common functions, we often use shorthand. This is illustrated in the table below, with the assumption that c ∈ Θ(1):
 
+<center>
+
 | Function       | Asymptotic Notation |
 |----------------|----------------------|
 | Constant       | O(1)                 |
@@ -45,6 +47,8 @@ To simplify the characterization of the asymptotic growth (i.e., asymptotic comp
 | Quadratic      | O(n^2)               |
 | Cubic          | O(n^3)               |
 | Exponential    | O(2^n)               |
+
+</center>
 
 This notation helps us analyze and compare the efficiency and growth rates of algorithms, abstracting away constant factors and hardware-dependent details.
 
@@ -85,6 +89,8 @@ $$ 2^{64} bit \approx 20exabyte $$
 
 ## Interface VS Data Structure
 
+<center>
+
 |Interface (API/ADT)            | Data structure                |
 |-------------------------------|-------------------------------|
 |what you want to do?           |how you do?                    |
@@ -92,6 +98,10 @@ $$ 2^{64} bit \approx 20exabyte $$
 |what data can store?           |how to store Data?             |
 |what opprations are suported?  |Algorithm to suport operations |
 |problems                       | solutions                     |
+
+
+</center>
+
 
 ---------------------------------------------------------------------------------------
 

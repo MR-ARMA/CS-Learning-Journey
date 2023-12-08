@@ -111,9 +111,13 @@ In conclusion, direct access arrays offer an insightful perspective on memory ac
 if we want to store some elements that the largest key is `u` and next, find them in an array so worst-case is: O(log u).
 so if we storenelements in as array that is smaller than `u` (because store `n` elements in `u` place that `n << u` is very bad idea!) next, our speed is faster:)
 
-if `n << u`, map keys to a smaller range $ m=\theta (n) $ and use smaller direct access array.
+if `n << u`, map keys to a smaller range $m=\theta (n)$ and use smaller direct access array.
 generally **Hash function:** 
+
+
 $$ h(k): \{ 0, 1,..., u-1 \} \to \{0, 1,..., n-1 \} $$
+
+
 **note:** **D** ***irect*** **A** ***ccess*** **A** ***rray*** called ***Hash Table***, h(k)called the ***Hash of key k***
 **note:** if `m << u` according to pigeonhole always exist keys a, b such that `h(a) = h(b)` and we can't store both at same index, so we have two way:
 - store somewher else in the array **(oppen address)**

@@ -183,19 +183,19 @@ What about removing items from the end? Popping is usually constant time, but ex
 - Make an array efficient for ***last*** dynamic operations
 - Python `list` is a dynamic array
 - ***Idea!*** Allocate extra space so reallocation does not occur with every dynamic operation
-- ***Fill ratio:*** 0 ≤ r ≤ 1 the ratio of items to space
-- Whenever array is full (r = 1), allocate Θ(n) extra space at end to fill ratio $ r_i $
-- Will have to insert Θ(n) items before the next reallocation
-- A single operation can take Θ(n) time for reallocation
-- However, any sequence of Θ(n) operations takes Θ(n) time
-- So each operation takes Θ(1) time `on average` 
+- ***Fill ratio:*** $0 ≤ r ≤ 1$ the ratio of items to space
+- Whenever array is full ($r = 1$), allocate $Θ(n)$ extra space at end to fill ratio $r_i$
+- Will have to insert $Θ(n)$ items before the next reallocation
+- A single operation can take $Θ(n)$ time for reallocation
+- However, any sequence of $Θ(n)$ operations takes $Θ(n)$ time
+- So each operation takes $Θ(1)$ time `on average` 
 
 ### Amortized Analysis
 
 - Data structure analysis technique to distribute cost over many operations
-- Operation has amortized cost T(n) if k operations cost at most ≤ kT(n)
-- `T(n) amortized` roughly means T(n) `on average` over many operations
-- Inserting into a dynamic array takes Θ(1) amortized time 
+- Operation has amortized cost $T(n)$ if $k$ operations cost at most $≤ kT(n)$
+- `T(n) amortized` roughly means $T(n)$ `on average` over many operations
+- Inserting into a dynamic array takes $Θ(1)$ amortized time 
 
 ### Comparison of data structures that have been reviewed so far
 
@@ -205,5 +205,5 @@ What about removing items from the end? Popping is usually constant time, but ex
 |              |build(X)       |get_at(i)/set_at(i, x)|insert_first(x)/delete_first()|insert_last(x)/delete last()|insert at(i, x)/delete_at(i)|
 |Array|<center>n|<center>1|<center>n|<center>n|<center>n|
 |Linked List|<center>n|<center>n|<center>1|<center>n|<center>n|
-|Dynamic Array|<center>n|<center>1|<center>n|$ 1_{(a)} $ |<center>n|
+|Dynamic Array|<center>n|<center>1|<center>n|$1_{(a)}$ |<center>n|
 

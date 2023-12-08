@@ -22,19 +22,19 @@ Any computer program you write will have finite size, while an input it acts on 
 What makes a computer program efficient? One program is said to be more efficient than another if it can solve the same problem input using fewer resources. We expect that a larger input might take more time to solve than another input having smaller size. In addition, the resources used by a program, e.g. storage space or running time, will depend on both the algorithm used and the machine on which the algorithm is implemented. We expect that an algorithm implemented on a fast machine will run faster than the same algorithm on a slower machine, even for the same input. We would like to be able to compare algorithms, without having to worry about how fast our machine is. So in this class, we compare algorithms based on their asymptotic performance relative to problem input size, in order to ignore constant factor differences in hardware performance.
 
 Asymptotic Notation:
-Asymptotic notation allows us to disregard constants that remain unchanged with variations in the size of the problem input. We represent this concept using O(f(n)), which defines the set of functions with domains over natural numbers, adhering to the following property:
+Asymptotic notation allows us to disregard constants that remain unchanged with variations in the size of the problem input. We represent this concept using $O(f(n))$, which defines the set of functions with domains over natural numbers, adhering to the following property:
 
-**O Notation:** A non-negative function, g(n), belongs to O(f(n)) if and only if there exists a positive real number, c, and a positive integer, n₀, such that g(n) ≤ c · f(n) for all n ≥ n₀. This definition imposes an upper limit on the asymptotic growth of a function for sufficiently large n. It remains true even if we were to scale or shift our function by a constant factor.
+**O Notation:** A non-negative function, $g(n)$, belongs to $O(f(n))$ if and only if there exists a positive real number, c, and a positive integer, $n₀$, such that $g(n) ≤ c · f(n)$ for all $n ≥ n₀$. This definition imposes an upper limit on the asymptotic growth of a function for sufficiently large $n$. It remains true even if we were to scale or shift our function by a constant factor.
 
-Conventionally, people often say that a function g(n) is O(f(n)) or equal to O(f(n)), but what they mean is set containment, i.e., g(n) ∈ O(f(n)). Since our problem's input size can be expressed as cn for some constant c, we can simplify and state that the input size is O(n) (order n). A similar notation applies to lower bounds.
+Conventionally, people often say that a function $g(n)$ is $O(f(n))$ or equal to $O(f(n))$, but what they mean is set containment, i.e., $g(n) ∈ O(f(n))$. Since our problem's input size can be expressed as cn for some constant $c$, we can simplify and state that the input size is $O(n)$ (order $n$). A similar notation applies to lower bounds.
 
-**Ω Notation:** For a non-negative function, g(n), it is in Ω(f(n)) if and only if there exists a positive real number, c, and a positive integer, n₀, such that c · f(n) ≤ g(n) for all n ≥ n₀.
+**Ω Notation:** For a non-negative function, $g(n)$, it is in $Ω(f(n))$ if and only if there exists a positive real number, $c$, and a positive integer, $n₀$, such that $c · f(n) ≤ g(n)$ for all $n ≥ n₀$.
 
-When one function both serves as an upper asymptotic bound and a lower asymptotic bound for another function, we employ Θ notation. If g(n) = Θ(f(n)), it signifies that f(n) precisely characterizes the growth of g(n).
+When one function both serves as an upper asymptotic bound and a lower asymptotic bound for another function, we employ $Θ$ notation. If $g(n) = Θ(f(n))$, it signifies that $f(n)$ precisely characterizes the growth of $g(n)$.
 
-**Θ Notation:** A non-negative g(n) is in Θ(f(n)) if and only if g(n) ∈ O(f(n)) ∩ Ω(f(n)).
+**Θ Notation:** A non-negative $g(n)$ is in $Θ(f(n))$ if and only if $g(n) ∈ O(f(n)) ∩ Ω(f(n))$.
 
-To simplify the characterization of the asymptotic growth (i.e., asymptotic complexity) of common functions, we often use shorthand. This is illustrated in the table below, with the assumption that c ∈ Θ(1):
+To simplify the characterization of the asymptotic growth (i.e., asymptotic complexity) of common functions, we often use shorthand. This is illustrated in the table below, with the assumption that $c ∈ Θ(1)$:
 
 <center>
 
@@ -77,12 +77,20 @@ This notation helps us analyze and compare the efficiency and growth rates of al
 if I have 32_bit word_RAM, how many different address can I addressing?
 
 ***Answer:***
+
+
 $$ 2^{32} bit \approx 4GB $$
+
+
 
 if I have 64_bit word_RAM, how many different address can I addressing?
 
 ***Answer:***
+
+
 $$ 2^{64} bit \approx 20exabyte $$
+
+
 
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
@@ -108,17 +116,21 @@ $$ 2^{64} bit \approx 20exabyte $$
 ## Exersice
 
 
-Show that $$(log n)^a = O(n^b) $$ for all positive constants a and b. 
+Show that $(log n)^a = O(n^b)$ for all positive constants a and b. 
 
 **Solution:** 
- It’s enough to show $$ \frac {n^b}{(\log n)^a} $$ limits to ∞ as n → ∞, and this is equivalent to 
+ It’s enough to show $\frac {n^b}{(\log n)^a}$ limits to ∞ as n → ∞, and this is equivalent to 
 arguing that the log of this expression approaches ∞: 
+
+
 $$
 [
 \lim_{{n \to \infty}} \frac {n^b}{(\log b^n)^a} = \lim_{{n \to \infty}} (b \log n - a \log \log n) = \lim_{{x \to \infty}} (bx - a \log x) = \infty
 ]
 $$
+
+
 as desired. 
-a Note: for the same reasons, $$ n = O(c^n) $$ for any c > 1.
+a Note: for the same reasons, $n = O(c^n)$ for any c > 1.
 
 

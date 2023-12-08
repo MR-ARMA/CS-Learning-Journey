@@ -12,7 +12,7 @@ Sorting an array, denoted as A, of comparable items into increasing order is a f
 **note:** It's important to note that a sort operation can be either destructive or in-place:
 
 - A destructive sort overwrites the original array A.
-- An in-place sort uses only O(1) extra space and, by definition, is also destructive (in place ⊆ destructive).
+- An in-place sort uses only $O(1)$ extra space and, by definition, is also destructive (in place ⊆ destructive).
 
 ### Permutation Sort
 
@@ -20,11 +20,11 @@ a sorting technique where you generate all possible permutations of the input da
 
 To clarify:
 
-1. **Permutation Generation**: Generate all possible permutations of the input data. For an array of n elements, there are n! (n factorial) possible permutations. This step has a time complexity of O(n!).
+1. **Permutation Generation**: Generate all possible permutations of the input data. For an array of n elements, there are n! (n factorial) possible permutations. This step has a time complexity of $O(n!)$.
 
-2. **Sorting**: Compare each generated permutation to find the one in sorted order. This step may also take O(n!) time in the worst case.
+2. **Sorting**: Compare each generated permutation to find the one in sorted order. This step may also take $O(n!)$ time in the worst case.
 
-The total time complexity of this informal ***Permutation Sort*** would be `O(n! * n!)`, which is impractical for even moderately sized inputs.
+The total time complexity of this informal ***Permutation Sort*** would be $O(n! * n!)$, which is impractical for even moderately sized inputs.
 
 ### Selection Sort
 
@@ -34,7 +34,7 @@ This algorithm maintains and grows a subset of the largest `i` items in sorted o
 - find the largest number in prefix `A[:i+1]` and swap it to `A[i]`
 - recursivly sort prefix `A[i]`
 we have another way.
-Let's take a closer look at Selection Sort with a Python implementation. After sorting the largest items into a sub-array `A[i+1:]`, the algorithm repeatedly scans the array to identify the largest item that hasn't been sorted yet and swaps it with the item at position A[i]. While Selection Sort can require Ω(n^2) comparisons in the worst case, it will perform at most O(n) swaps.
+Let's take a closer look at Selection Sort with a Python implementation. After sorting the largest items into a sub-array `A[i+1:]`, the algorithm repeatedly scans the array to identify the largest item that hasn't been sorted yet and swaps it with the item at position A[i]. While Selection Sort can require $Ω(n^2)$ comparisons in the worst case, it will perform at most $O(n)$ swaps.
 
 
 ```python 
@@ -154,7 +154,7 @@ called ***preprocessing***.
 |              |Container      |Static                |Dynamic                       |Order                       |Order                       |
 |              |build(X)       |find(k)               |insert(x)/delete(k)           |find_min()/find_max()       |find_prev(k)/find_next(k)   |
 |Array         |<center>n      |<center>n             |<center>n                     |<center>n                   |<center>n                   |
-|Sortes Array  |$$ n \log n $$ |$$ \log n $$          |<center>n                     |<center>1                   |$$ \log n $$                |
+|Sortes Array  |$n \log n$ |$\log n$          |<center>n                     |<center>1                   |$\log n$                |
 
 
 
@@ -168,7 +168,7 @@ This is a very general method, and is the one we’ve used in lecture so far.
 
 ## Master Theorem
 
-The ***Master*** Theorem provides a way to solve recurrence relations in which recursive calls decrease problem size by a constant factor. Given a recurrence relation of the form `T(n) = aT(n/b)+f(n)` and `T(1) = Θ(1)`, with branching factor `a ≥ 1`, problem size reduction factor `b > 1`, and asymptotically non-negative function `f(n)`, the Master Theorem gives the solution to the recurrence by comparing `f(n)` to $$ a^{\log_b n} = n^{\log_a b} $$  the number of leaves at the bottom of the recursion tree. When `f(n)` grows asymptotically faster than $$ n^{\log_b a} $$ the work done at each level decreases
+The ***Master*** Theorem provides a way to solve recurrence relations in which recursive calls decrease problem size by a constant factor. Given a recurrence relation of the form `T(n) = aT(n/b)+f(n)` and `T(1) = Θ(1)`, with branching factor `a ≥ 1`, problem size reduction factor `b > 1`, and asymptotically non-negative function `f(n)`, the Master Theorem gives the solution to the recurrence by comparing `f(n)` to $a^{\log_b n} = n^{\log_a b}$  the number of leaves at the bottom of the recursion tree. When `f(n)` grows asymptotically faster than $n^{\log_b a}$ the work done at each level decreases
 geometrically so the work at the root dominates; alternatively, when `f(n)` grows slower, the work done at each level increases geometrically and the work at the leaves dominates. When their growth rates are comparable, the work is evenly spread over the tree’s `O(log n)` levels.
 
 
@@ -176,16 +176,16 @@ geometrically so the work at the root dominates; alternatively, when `f(n)` grow
 
 |case|solution|conditions|
 |-|-|-|
-|1|$$ T(n) = \theta (n^{\log_b a})$$|$$ f(n) = O(n^{log_b {a−ε}})$$ <center>for some constant ε > 0|
-|2|$$ T(n) = \theta (n^{\log_b a} \log^{k+1} n)$$| $$ f(n) = \theta (n^{\log_b a} \log^{k+1} n) $$ <center>for some constant k ≥ 0
-|3|$$ T(n) = Θ(f(n)) $$| $$ f(n) = Ω(n^{\log_b {a+ε}}) $$ <center>for some constant ε > 0 and af(n/b) < cf(n) for some constant 0 < c < 1
+|1|$T(n) = \theta (n^{\log_b a})$|$f(n) = O(n^{log_b {a−ε}})$ <center>for some constant ε > 0|
+|2|$T(n) = \theta (n^{\log_b a} \log^{k+1} n)$| $f(n) = \theta (n^{\log_b a} \log^{k+1} n) $<center>for some constant k ≥ 0
+|3|$T(n) = Θ(f(n))$| $f(n) = Ω(n^{\log_b {a+ε}})$ <center>for some constant ε > 0 and af(n/b) < cf(n) for some constant 0 < c < 1
 
 
-The Master Theorem takes on a simpler form when `f(n)` is a polynomial, such that the recurrence has the from $$ T(n) = aT(\frac{n}{b}) + Θ(n^c) $$ for some constant `c ≥ 0`.
+The Master Theorem takes on a simpler form when `f(n)` is a polynomial, such that the recurrence has the from $T(n) = aT(\frac{n}{b}) + Θ(n^c) $for some constant `c ≥ 0`.
 
 | case | solution                     | condition         | intuition                      |
 | ---- | ----------------------------- | ----------------- | ------------------------------- |
-| 1    | $$ T(n) = Θ(n^{\log_b a}) $$  | $$ c < \log_b a $$ | Work done at leaves dominates |
-|2   | $$ T(n) = Θ(n^c \log n)  $$ | $$ c = \log_b a $$| Work balanced across the tree|
-|3   | $$ T(n) = Θ(n^c)         $$ | $$c > \log_b a  $$| Work done at root dominates  |
+| 1    | $T(n) = Θ(n^{\log_b a})$  | $c < \log_b a$ | Work done at leaves dominates |
+|2   | $T(n) = Θ(n^c \log n)$ | $c = \log_b a$| Work balanced across the tree|
+|3   | $T(n) = Θ(n^c)$ | $c > \log_b a$| Work done at root dominates  |
 

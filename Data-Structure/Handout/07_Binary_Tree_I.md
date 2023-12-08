@@ -10,8 +10,8 @@
 ||build(X)|get_at(i)/set_at(i)|insert_first(x)/delete_first()|insert_last(x)/delete last()|insert at(i, x)|delete_at(i)|
 |Array|<center>n|<center>1|<center>n|<center>n|<center>n|
 |Linked List|<center>n|<center>n|<center>1|<center>n|<center>n|
-|Dynamic Array|<center>n|<center>1|<center>n|$$ 1_{(a)} $$ |<center>n|
-|Goal|<center>n| $$ \log n $$ | $$ \log n $$ | $$ \log n $$ | $$ \log n $$ |
+|Dynamic Array|<center>n|<center>1|<center>n|$1_{(a)}$ |<center>n|
+|Goal|<center>n| $\log n$ | $\log n$ | $\log n$ | $\log n$ |
 
 
 
@@ -20,10 +20,10 @@
 ||Container|Static|Dynamic|Order|Order|
 ||build(X)|find(k)|insert(x)/delete(k)|find_min()/find_max()|find prev(k)/find next(k)|
 |Array|<center>n|<center>n|<center>n|<center>n|<center>n|
-|Sorted Array|$$ n \log n $$|$$ \log n $$|<center>n|<center>1|$$ \log n $$|
+|Sorted Array|$n \log n$|$\log n$|<center>n|<center>1|$\log n$|
 |Direct Access Array|<center>u|<center>1|<center>1|<center>u|<center>u|
-|Hash Table|$$ n_{(e)} $$|$$ 1_{(e)} $$|$$ 1_{(a)(e)} $$|<center>n|<center>n|
-|Goal|<center>n| $$n \log n $$ | $$ \log n $$ | $$ \log n $$ | $$ \log n $$ |
+|Hash Table|$n_{(e)}$|$1_{(e)}$|$1_{(a)(e)}$|<center>n|<center>n|
+|Goal|<center>n| $n \log n$ | $\log n$ | $\log n$ | $\log n$ |
 
 #### How? Binary Tree
 
@@ -199,10 +199,10 @@ traversal order = increasing order
 - How do we find i-th node in traversal order of a subtree? Call this operation `subtree_at(i)`
 - Could just iterate through entire traversal order, but that’s bad, `O(n)`
 - However, if we could compute a subtree’s ***size*** in `O(1)`, then can solve in `O(h)` time
-     - How? Check the size nL of the left subtree and compare to i
-     - If i < n_L, recurse on the left subtree
-     - If i > n_L, recurse on the right subtree with $ i' = i − n_L − 1 $
-     - Otherwise, i = n_L, and you’ve reached the desired node!
+     - How? Check the size nL of the left subtree and compare to $i$
+     - If $i < n_L$, recurse on the left subtree
+     - If $i > n_L$, recurse on the right subtree with $i' = i − n_L − 1$
+     - Otherwise, $i = n_L$, and you’ve reached the desired node!
 - Maintain the size of each node’s subtree at the node via **augmentation**
      - Add node.size field to each node
      - When adding new leaf, add +1 to a.size for all ancestors a in `O(h)` time

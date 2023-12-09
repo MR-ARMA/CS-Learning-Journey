@@ -1,8 +1,7 @@
 # Homework 1: Setting Up Antler and Scientific Toolworks Understand
 
 
-# <center> ![Antlr](../pictures/antlr.jpeg)
-
+# <center> ![Antlr](../pictures/antlr.jpg)
 
 
 This homework assignment guides you through the process of downloading and setting up Antler and Scientific Toolworks Understand. These tools are essential for our Compiler Design course. 

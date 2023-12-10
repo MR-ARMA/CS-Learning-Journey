@@ -34,6 +34,13 @@ To generate the parser code from the grammar specification, you need to use the 
 
 4. Use the Generated Parser: Incorporate the generated parser into your application to parse input strings according to the defined grammar.
 
+
+or you can just write this in terminal:
+
+```bash
+antlr4 -Dlanguage=Python3 .\HelloWorld.g4
+
+```
 ## Before Generate
 before generate we just write ANTLR codes and we have:
 

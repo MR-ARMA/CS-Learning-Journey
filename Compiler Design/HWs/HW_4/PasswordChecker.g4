@@ -1,6 +1,7 @@
 // PasswordChecker
 grammar PasswordChecker;
 
+
 // Parser rules
 startRule : password EOF;
 

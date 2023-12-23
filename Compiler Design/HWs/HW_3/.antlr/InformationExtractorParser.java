@@ -133,6 +133,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_startRule; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterStartRule(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitStartRule(this);
+		}
 	}
 
 	public final StartRuleContext startRule() throws RecognitionException {
@@ -217,6 +225,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nationalNumber; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterNationalNumber(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitNationalNumber(this);
+		}
 	}
 
 	public final NationalNumberContext nationalNumber() throws RecognitionException {
@@ -269,6 +285,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_email; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterEmail(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitEmail(this);
+		}
 	}
 
 	public final EmailContext email() throws RecognitionException {
@@ -314,6 +338,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_postalCode; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterPostalCode(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitPostalCode(this);
+		}
 	}
 
 	public final PostalCodeContext postalCode() throws RecognitionException {
@@ -355,6 +387,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_decimalNumber; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterDecimalNumber(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitDecimalNumber(this);
+		}
 	}
 
 	public final DecimalNumberContext decimalNumber() throws RecognitionException {
@@ -424,6 +464,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_softwareVersion; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterSoftwareVersion(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitSoftwareVersion(this);
+		}
 	}
 
 	public final SoftwareVersionContext softwareVersion() throws RecognitionException {
@@ -509,6 +557,14 @@ public class InformationExtractorParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_websiteAddress; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).enterWebsiteAddress(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof InformationExtractorListener ) ((InformationExtractorListener)listener).exitWebsiteAddress(this);
+		}
 	}
 
 	public final WebsiteAddressContext websiteAddress() throws RecognitionException {

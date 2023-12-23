@@ -1,4 +1,4 @@
-// Generated from InformationExtractor.g4 by ANTLR 4.13.1
+// Generated from c://Users//admin//Desktop//CS-Learning-Journey//Compiler Design//HWs//HW_3//InformationExtractor.g4 by ANTLR 4.13.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;

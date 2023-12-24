@@ -1,4 +1,4 @@
-// Generated from c://Users//admin//Desktop//CS-Learning-Journey//Compiler Design//quiz//quiz1_update//operation copy.g4 by ANTLR 4.13.1
+// Generated from c://Users//admin//Desktop//CS-Learning-Journey//Compiler Design//quiz//quiz1_update//operation.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -88,7 +88,7 @@ public class operationLexer extends Lexer {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "operation copy.g4"; }
+	public String getGrammarFileName() { return "operation.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

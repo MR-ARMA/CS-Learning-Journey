@@ -199,3 +199,33 @@ After the files were generated, in the `test_api.py` section, change the followi
 - `_db = und.open(r"C:\Users\admin\Desktop\OpenUnderstand\mydb.udb")` to `_db = und.open(r"C:\Users\admin\Desktop\OpenUnderstand\test.udb")`
 
 After running this, the output is equal to the number `6`.
+
+
+and in the end, when we write this line code in the end of "test_run.py" file, We take the number `6`
+
+```python
+print(len(_db.ents("Class")))
+
+```
+
+
+
+
+
+
+## work on the Understand
+
+# Work Review in the Understand Scitools Program
+
+After installing the Understand program, you can crack it for free use. You can open a new project by navigating to `File > New < Project`. Once you've done this, you'll see a page similar to the one shown in the picture below:
+
+![Project Page](../pictures/HW_5_new_project_understand.JPG)
+
+You can either clone a repository from GitHub or load it from a local location. Once you've done this, your review is ready.
+
+Let's consider the case where we review the same tic-tac-toe file. The page would look like this:
+
+![Tic Tac Toe File](../pictures/HW_5_understan_tic_tac_toe.JPG)
+
+As you can see, different numbers appear, and the class value equals the number ÷.
+

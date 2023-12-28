@@ -213,9 +213,8 @@ print(len(_db.ents("Class")))
 
 
 
-## work on the Understand
 
-# Work Review in the Understand Scitools Program
+# Work the program Review in the Understand Scitools
 
 After installing the Understand program, you can crack it for free use. You can open a new project by navigating to `File > New < Project`. Once you've done this, you'll see a page similar to the one shown in the picture below:
 
@@ -227,5 +226,5 @@ Let's consider the case where we review the same tic-tac-toe file. The page woul
 
 ![Tic Tac Toe File](../pictures/HW_5_understan_tic_tac_toe.JPG)
 
-As you can see, different numbers appear, and the class value equals the number ÷.
+As you can see, different numbers appear, and the class value equals the number `1`.
 

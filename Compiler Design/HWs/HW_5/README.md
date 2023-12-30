@@ -1,5 +1,9 @@
 # The comparison between understand and openunderstand worked
 
+
+You can also use the pdf file of the manual written in Farsi from this [link](../HW_5/openunderstand_Guidance_persian.pdf) or Or follow the steps below:
+
+
 For this, we will first work with the _openunderstand_ program, which is an open source program.
 
 ## How to start openunderstand software

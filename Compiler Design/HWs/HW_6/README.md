@@ -49,36 +49,7 @@ In this example, the `checkAge` method declares that it might throw an `AgeExcep
 
 ### Example Whit Analyse
 
-```Java
-
-class CustomException extends Exception {
-   public CustomException(String message) {
-       super(message);
-   }
-}
-
-public class Main {
-   public static void validateInput(int input) throws IllegalArgumentException, CustomException {
-       if (input < 0) {
-           throw new IllegalArgumentException("Input cannot be negative.");
-       } else if (input > 100) {
-           throw new CustomException("Input exceeds maximum limit.");
-       }
-   }
-
-   public static void main(String[] args) {
-       try {
-           validateInput(-5);
-           validateInput(150);
-           validateInput(50);
-       } catch (IllegalArgumentException | CustomException e) {
-           System.out.println(e.getMessage());
-       }
-   }
-}
-
-
-```
+In [**this code**](../HW_6/Throw_Code.java) we used `throw` of Java Syntax 
 
 
 #### **Analys Trow in code**
@@ -98,6 +69,9 @@ The `throw` keyword in the provided code is used to explicitly throw exceptions 
 
 In the `validateInput` method, the `throw` keyword is used to throw exceptions based on the input value. When an exception is thrown, the normal flow of the program is interrupted, and control is immediately transferred to the nearest matching catch block. If no matching catch block is found, the program terminates.
 
+#### Analyse Throw in Understand Scitools
+
+# <center><img src="../pictures/HW_6_Throw_Understand.JPG" width="700"/>
 
 
 # Import and Export
@@ -124,73 +98,10 @@ In this example, we import the `ArrayList` class from the `java.util` package, a
 
 ## Example Whit Analyse
 
-```Java
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
 
-class Student {
-   private String name;
-   private int score;
-
-   public Student(String name, int score) {
-       this.name = name;
-       this.score = score;
-   }
-
-   public String getName() {
-       return name;
-   }
-
-   public int getScore() {
-       return score;
-   }
-
-   @Override
-   public String toString() {
-       return "Student{" +
-               "name='" + name + '\'' +
-               ", score=" + score +
-               '}';
-   }
-}
-
-public class School {
-   private ArrayList<Student> students;
-
-   public School() {
-       this.students = new ArrayList<>();
-   }
-
-   public void addStudent(Student student) {
-       this.students.add(student);
-   }
-
-   public void printStudents() {
-       for (Student student : students) {
-           System.out.println(student);
-       }
-   }
-
-   public static void main(String[] args) {
-       School school = new School();
-       school.addStudent(new Student("John", 85));
-       school.addStudent(new Student("Jane", 90));
-       school.addStudent(new Student("Tom", 95));
-
-       school.printStudents();
-
-       int[] scores = {85, 90, 95};
-       Arrays.sort(scores);
-       System.out.println("Sorted scores: " + Arrays.toString(scores));
-
-       Date currentDate = new Date();
-       System.out.println("Current date: " + currentDate);
-   }
-}
+In [**this code**](../HW_6/Import_Code.java) we used `import` of Java Syntax 
 
 
-```
 
 #### **Analys import in code**
 
@@ -223,7 +134,9 @@ Date currentDate = new Date();
 
 Without the import statements, you would have to use the full package paths to use these classes, which would make your code more verbose and harder to read.
 
+#### Analyse import in Understand Scitools
 
+# <center><img src="../pictures/HW_6_import_understand.JPG" width="700"/>
 
 
 
@@ -241,38 +154,8 @@ In this example, the `com.mycompany.myapp` package is exported, making it access
 
 ## Example Whit Analyse
 
-```Java
-// module-info.java
-module com.mycompany.myapp {
-   requires java.base;
-   exports com.mycompany.myapp;
-}
+In [**this code**](../HW_6/Export_Code.java) we used `throw` of Java Syntax 
 
-// src/com.mycompany.myapp/MyClass.java
-package com.mycompany.myapp;
-
-public class MyClass {
-   public static void sayHello() {
-       System.out.println("Hello from MyClass!");
-   }
-}
-
-// src/com.myothercompany.myotherapp/MyOtherClass.java
-module com.myothercompany.myotherapp {
-   requires com.mycompany.myapp;
-}
-
-import com.mycompany.myapp.MyClass;
-
-public class MyOtherClass {
-   public static void main(String[] args) {
-       MyClass.sayHello();
-   }
-}
-
-
-
-```
 
 #### **Analyse export in code**
 
@@ -293,3 +176,26 @@ module com.mycompany.myapp {
 By default, the public types of a module are not visible outside the module. To make them accessible from other modules, we must export the package containing these types. Note that sub-packages are not automatically exported.
 
 This `export` directive allows other modules to use the `com.mycompany.myapp` package, as shown in the `com.myothercompany.myotherapp` module in the subsequent code snippet.
+
+
+#### Analyse Export in Understand Scitools
+
+# <center><img src="../pictures/HW_6_Export_understand.JPG" width="700"/>
+
+
+
+
+
+# General Example
+
+
+this code have all of the import, export and Throw together:
+
+
+In [**this code**](../HW_6/General_Example_Code.java) we used `throw` of Java Syntax 
+
+
+and analyse whit understand is:
+
+
+# <center><img src="../pictures/HW_6_example.JPG" width="700"/>

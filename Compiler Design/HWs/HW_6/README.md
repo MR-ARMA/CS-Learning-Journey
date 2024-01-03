@@ -199,3 +199,12 @@ and analyse whit understand is:
 
 
 # <center><img src="../pictures/HW_6_example.JPG" width="700"/>
+
+
+# Analyse in Understand Scitools
+
+In this section we Analyse [this code](../HW_6/General_Example_Code.java)
+
+first we test the classes in our code and we have:
+
+![pic](../pictures/class_in_openunderstand.JPG)

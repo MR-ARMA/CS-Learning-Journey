@@ -208,3 +208,68 @@ In this section we Analyse [this code](../HW_6/General_Example_Code.java)
 first we test the classes in our code and we have:
 
 ![pic](../pictures/class_in_openunderstand.JPG)
+
+
+
+# Summary of concepts
+
+## Java Import and Importby
+
+Java Import indicates a file imports an individual class. For example, the `some_file.java` file might contain:
+
+```java
+import pack1.some_class;
+```
+
+Java Import Demand indicates a file has an on-demand import statement for a package or class. For example, the `some_file.java` file might contain:
+
+```java
+import pack1.*;
+```
+
+|Reference kind string|Entity performing references|Entity being referenced|
+|-|-|-|
+|Java Import|`some_file`|`pack1.some_class`|
+|Java Importby|`pack1.some_class`|`some_file`|
+|Java Import Demand	|`some_file`|`pack1`|
+|Java Importby Demand|`pack1`|`some_file`|
+
+## Java Expoer and Exportby
+
+Java Export and Exportby Java Export indicates a module exports a specific package. For example, the `com.example.foo` module might contain:
+```java
+module com.example.foo {
+   exports com.example.foo.bar;
+}
+```
+In this case, `com.example.foo.bar` is exported by `com.example.foo`.
+
+Java Exportby indicates a module exports a package to a specific module. For example, the `com.example.foo` module might contain:
+
+
+```java
+module com.example.foo {
+   exports com.example.foo.bar to com.example.foo.probe;
+}
+```
+In this case, `com.example.foo.bar` is exported by `com.example.foo` to `com.example.foo.probe`.
+
+|Reference kind string|Entity performing references|Entity being referenced|
+|-|-|-|
+|Java Export|	`com.example.foo`|`com.example.foo.bar`|
+|Java Exportby|`	com.example.foo.bar`|`com.example.foo.probe`|
+
+## Java Throw and Throwby
+
+Indicates that a method throws an exception.
+
+```java
+void some_meth() throws java.io.IOException {
+ ...
+}
+```
+
+|Reference kind string|Entity performing references|Entity being referenced|
+|-|-|-|
+|Java Throw	|`some_meth`	|`java_io.IOException`|
+|Java Throwby	|`java_io.IOException`	|`some_meth`|

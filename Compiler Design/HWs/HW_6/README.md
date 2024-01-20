@@ -273,3 +273,15 @@ void some_meth() throws java.io.IOException {
 |-|-|-|
 |Java Throw	|`some_meth`	|`java_io.IOException`|
 |Java Throwby	|`java_io.IOException`	|`some_meth`|
+
+
+
+
+
+
+
+# Understand VS OpenUnderstand API
+
+testing comparison between Understand and OpenUnderstand led to this:
+
+![pic](../pictures/UvsO.png.png)

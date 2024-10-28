@@ -1,75 +1,50 @@
+Here’s an improved structure for your README file, following your instructions:
 
+---
 
-# 🎓 Compiler Design Course Pamphlets 📚
+# 🎓 Compiler Design Course Materials 📚
 
-<img src="Handout/pictures/compiler-readme.jpg" height="300" width="1200" />
+![Compiler Image](Handout/pictures/compiler-readme.jpg)
 
-Welcome to the repository for the Compiler Design Course Pamphlets! 🎉
-
-This repository contains a collection of pamphlets that I've created to help others understand some of the fundamental concepts in compiler design. I've taken the time to edit and rewrite these pamphlets in a more friendly and engaging way, making them easier to understand and more approachable to beginners. 📝
+Welcome to the Compiler Design Course repository! This collection provides curated materials covering essential concepts in compiler design, written to make complex ideas approachable, particularly for beginners. 📝
 
 ## 📖 Table of Contents
 
-00. [Introduction](./Handout/00_Introduction.md)
+**Handouts**
+0. [Introduction](./Handout/00_Introduction.md)
+1. [Compiler Basics](./Handout/01_Compiler-Basic.md)
+2. [Bootstrapping](./Handout/02_Bootstrapping.md)
+3. [Regular Expressions & Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.md)
+4. [Manual Construction of Lexers](./Handout/04_Manual_Construction_of_Lexers.md)
+5. [Automatic Construction of Lexers](./Handout/05_Automatic_construction_of_Lexers.md)
+6. [Syntax Analysis](./Handout/06_Syntax-Analysis.md)
+7. [Types of Grammar](./Handout/07_Types-of-Grammar.md)
+8. [Ambiguity Problems and Solutions](./Handout/08_Ambiguity-Problems-and-Eliminating-the-Ambiguity.md)
+9. [Top-Down Parsing](./Handout/09_Top-down.md)
+10. [Bottom-Up Parsing I](./Handout/10_Bottom-up_I.md)
+11. [Bottom-Up Parsing II](./Handout/11_Bottom-up_II.md)
+12. [LR(0) Parsing](./Handout/12_LR0_parsing.md)
+13. [SLR Parsing](./Handout/13_SLR_parsing.md)
+14. [LR(1) Parsing](./Handout/14_LR1_parsing.md)
+15. [LALR(1) Parsing](./Handout/15_LALR1_parsing.md)
+16. [Ambiguity in SLR Parsing](./Handout/16_ambiguous_with_SLR.md)
+17. [Error Recovery in LR Parsing](./Handout/17_error_recovery_in_LR_parsing.md)
+18. [Bottom-Up Parser Generators](./Handout/18_Bottom-up-Parser-Generators.md)
+19. [CYK Parsing Algorithm](./Handout/19-CYK_parsing_algorithm.md)
 
-01. [Compiler Basic](./Handout/01_Compiler-Basic.md)
+## 📚 Course Topics Overview
 
-02. [Bootstrapping](./Handout/02_Bootstrapping.md)
+- **Compiler Architecture and Design**: An introduction to the fundamental structure of compilers.
+- **Compiler Internals & Generators**: Detailed insights into compiler tools and their internal processes.
+- **Compilation Processes**: How high-level code is transformed into machine code.
+- **Practical Compiler Construction**: Exercises in building compilers from theory to practice.
+- **Formal Language & Automata Applications**: Formal language theory in compiler design.
+- **Parsing Techniques**: Exploration of various parsing methods for source code analysis.
+- **Low-Level Code Generation & Optimization**: Strategies for efficient low-level code and optimization.
+- **System Programming and Testing Paradigms**: Principles of system programming and testing within compiler development.
 
-03. [Regular Expresion and Lexical Analysis](./Handout/03_Regular-Expressions-and-Lexical-Analysis.md)
-
-04. [Manual Construction of Lexers](./Handout/04_1_Manual_Construction_of_Lexers.md)
-
-05. [05 Automatic construction of Lexers](./Handout/05_Automatic_construction_of_Lexers.md)
-
-06. [Syntax Analysis](./Handout/06_Syntax-Analysis.md)
-
-07. [Types of Grammar](./Handout/07_Types-of-Grammar.md)
-
-08. [Ambiguity Problems and Eliminating the Ambiguity](./Handout/08_Ambiguity-Problems-and-Eliminating-the-Ambiguity.md)
-
-09. [Top Down](./Handout/09_Top-down.md)
-
-10. [Bottom Down](./Handout/10_Bottom-down.md)
-
-
-## 📚 Course Topics
-
-These pamphlets cover a wide range of topics in compiler design, including:
-
-## Course Overview
-
-
-- **Overall Compiler Architecture and Design:**
-  - Explore the fundamental structure and design principles underlying compilers.
-
-- **Compiler Internals and Compiler Generators:**
-  - Gain an in-depth understanding of the internal workings of compilers and explore tools for generating compilers.
-
-- **Understanding Compiler Functionality:**
-  - Learn what compilers do and unravel the intricacies of their functionality.
-
-- **Insights into Compilation Processes:**
-  - Grasp the inner workings of compilation processes and understand how they translate high-level code into executable machine code.
-
-- **Hands-On Compiler Construction:**
-  - Engage in practical exercises to build your own compilers, applying theoretical concepts to real-world scenarios.
-
-- **Applied Formal Language and Automata:**
-  - Explore formal language theory and automata, understanding their application in the context of compiler construction.
-
-- **Various Parsing Methods and Techniques:**
-  - Dive into different parsing methods and techniques employed in the analysis of source code.
-
-- **Low-Level Code Generation and Optimization:**
-  - Learn about the intricacies of generating efficient low-level code and optimizing it for enhanced performance.
-
-- **Intellectual Paradigms in System Programming and Testing:**
-  - Gain insights into the intellectual paradigms that underpin system programming and the crucial role of testing in compiler development.
-
-Embark on this educational journey, where you will not only gain theoretical knowledge but also acquire practical skills in building and understanding compilers. Let's explore the intricate world of compiler design together.
-
+Take this journey into compiler design to build a solid understanding and practical skills.
 
 ## 👩‍💻 Contributing
 
-I welcome contributions to these pamphlets! If you have any suggestions or improvements, please feel free to submit a pull request. I'm always looking for ways to improve these pamphlets and make them more helpful to others. 🙌
+Contributions are welcome! If you have suggestions or improvements, please submit a pull request. Let’s make these resources as helpful as possible! 🙌

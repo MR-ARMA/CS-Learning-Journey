@@ -11,6 +11,7 @@ Welcome to the Compiler Design Course repository! This collection provides curat
 ## 📖 Table of Contents
 
 **Handouts**
+
 0. [Introduction](./Handout/00_Introduction.md)
 1. [Compiler Basics](./Handout/01_Compiler-Basic.md)
 2. [Bootstrapping](./Handout/02_Bootstrapping.md)
